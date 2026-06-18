@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#050505;
+  color:white;
+  overflow-x:hidden;
+}
+
+::selection{
+  background:#22d3ee;
+  color:black;
+}
+@media (min-width:1024px){
+
+  body{
+    cursor:none;
+  }
+
+  a,
+  button,
+  input,
+  textarea{
+    cursor:none;
+  }
+
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  animation: marquee 18s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+body {
+  background: #050505;
+  color: white;
+  overflow-x: hidden;
+}
