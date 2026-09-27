@@ -15,32 +15,33 @@ const HeroImage = () => {
   return (
     <div className="relative flex h-[500px] w-[500px] items-center justify-center overflow-visible">
 
-  {/* Glow */}
-  <div className="absolute h-[380px] w-[380px] rounded-full bg-cyan-400/25 blur-[120px]"></div>
-  <motion.div
-  animate={{
-    scale: [1, 1.08, 1],
-    opacity: [0.5, 0.9, 0.5],
-  }}
-  transition={{
-    duration: 3,
-    repeat: Infinity,
-  }}
-  className="absolute h-[340px] w-[340px] rounded-full border border-cyan-400/40"
-/>
+      {/* Glow */}
+      <div className="absolute h-[380px] w-[380px] rounded-full bg-cyan-400/25 blur-[120px]"></div>
 
-  {/* Rotating Ring */}
-  <div className="absolute h-[320px] w-[320px] animate-spin rounded-full border-2 border-cyan-400/40 [animation-duration:15s]"></div>
+      <motion.div
+        animate={{
+          scale: [1, 1.08, 1],
+          opacity: [0.5, 0.9, 0.5],
+        }}
+        transition={{
+          duration: 3,
+          repeat: Infinity,
+        }}
+        className="absolute h-[340px] w-[340px] rounded-full border border-cyan-400/40"
+      />
 
-  {/* Second Ring */}
-  <div className="absolute h-[300px] w-[300px] rounded-full border border-cyan-300 shadow-[0_0_25px_#22d3ee]"></div>
+      {/* Rotating Ring */}
+      <div className="absolute h-[320px] w-[320px] animate-spin rounded-full border-2 border-cyan-400/40 [animation-duration:15s]"></div>
 
-  {/* Profile Image */}
-  <img
-    src="/Profile-Image.png"
-    alt="Arghyadip Roy"
-    className="relative z-20 h-[230px] w-[230px] rounded-full object-cover object-top shadow-[0_0_40px_rgba(34,211,238,.45)] md:h-[280px] md:w-[280px]"
-  />
+      {/* Second Ring */}
+      <div className="absolute h-[300px] w-[300px] rounded-full border border-cyan-300 shadow-[0_0_25px_#22d3ee]"></div>
+
+      {/* Profile Image */}
+      <img
+        src="/Profile.png"
+        alt="Arghyadip Roy"
+        className="relative z-20 h-[230px] w-[230px] rounded-full object-cover object-top shadow-[0_0_40px_rgba(34,211,238,.45)] md:h-[280px] md:w-[280px]"
+      />
 
       {/* Floating Icons */}
 
